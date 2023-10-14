@@ -9,9 +9,9 @@ const Pagination = ({PageNumber}) => {
     PageNumber((x: number) => x + 1)
   }
   return (
-    <div>
-<button onClick={prev} className="btn btn-primary">Prev</button>
-<button onClick={next} className="btn btn-primary">Next</button>
+    <div className='felx justify-center items-center'>
+      <button onClick={prev} className="btn btn-primary m-2">Prev</button>
+      <button onClick={next} className="btn btn-primary m-2">Next</button>
     </div>
   )
 }

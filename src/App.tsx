@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { loadCharacter} from "./api";
+import { loadCharacters} from "./api";
 import { Character } from "./api";
 import Pagination from "./pagination/pagination";
 
@@ -9,9 +9,8 @@ function App() {
   const [characters, setCharacters] = useState<Character>();
   const [error, setError] = useState<string | null>(null);
 
-  const loadMessage = async (page: string) => {
-    const response = await loadCharacter(page);
-
+  const loadCharacter = async (page: number) => {
+    const response = await loadCharacters(page);
     if (!response.success) {
       setError("A szerver nem elérhető");
     } else {
@@ -21,15 +20,17 @@ function App() {
   };
 
   useEffect(() => {
-    loadMessage(`?page=${pageNumber}`);
+    loadCharacter(pageNumber)
     return () => {};
+
   },);
 
-  const [pageNumber, setPageNumber] = useState(2)
+  const [pageNumber, setPageNumber] = useState(1)
+
   // indiai rész
 
+/* 
 
-  console.log(pageNumber)
   const [fetchedData, updateFetchedData] = useState([])
   const {info, results} = fetchedData
 
@@ -42,7 +43,7 @@ function App() {
         updateFetchedData(data)
     })()
 
-  }, [api]);
+  }, [api]); */
     // indiai rész
 
   return (
@@ -67,17 +68,10 @@ function App() {
             </div>
           </div>
         ))}
-      </div>
-{/*       <div>
-      <p>Indiai Barátom</p>
-      {results.map(result =>(
-        <p>{result.name}</p>
-      ))}
-      <p>Indiai Barátom</p>
-      </div> */}
-      <Pagination
+        <Pagination
         PageNumber={setPageNumber}
       />
+      </div>
     </div>
   );
 }
