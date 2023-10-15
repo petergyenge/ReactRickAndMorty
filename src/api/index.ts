@@ -5,9 +5,9 @@ const client = axios.create({
   baseURL: "https://rickandmortyapi.com",
 });
 
-const getCharacter = async (page?: number): Promise<AxiosResponse | null> => {
+const getCharacter = async (page?: number, name?: string): Promise<AxiosResponse | null> => {
   try {
-    const response = await client.get("/api/character", { params: {page: page} });
+    const response = await client.get("/api/character", { params: {page: page, name: name} });
     return response;
   } catch (error) {
     return (error as AxiosError).response || null;
@@ -66,8 +66,8 @@ type Response<Type> =
       success: false;
     };
 
-export const loadCharacters = async (title?: number): Promise<Response<Character>> => {
-  const response = await getCharacter(title);
+export const loadCharacters = async (title?: number, name?: string): Promise<Response<Character>> => {
+  const response = await getCharacter(title, name);
   if (!response) return { success: false, status: 0 };
   if (response.status !== 200)
     return { success: false, status: response.status };
