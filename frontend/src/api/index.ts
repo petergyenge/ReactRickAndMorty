@@ -40,8 +40,7 @@ const CharacterApiSchema = z.object({
       episode: z.string().array(),
       url: z.string(),
       created: z.string()
-    })
-    .array(),
+    }).array(),
 });
 
 export type Character = z.infer<typeof CharacterApiSchema>;

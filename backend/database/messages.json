@@ -1,0 +1,42 @@
+[
+  {
+    "user": "bela123",
+    "message": "Jo napom van",
+    "createdAt": "2023-09-15T15:12:24.671Z"
+  },
+  {
+    "user": "Teszt",
+    "message": "EZ egy jó nap volt1010 ",
+    "createdAt": "2023-10-17T17:17:17.969Z"
+  },
+  {
+    "user": "Teszt",
+    "message": "EZ egy jó nap volt1010 ",
+    "createdAt": "2023-10-17T17:32:14.140Z"
+  },
+  {
+    "user": "Teszt",
+    "message": "EZ egy jó nap volt1010 ",
+    "createdAt": "2023-10-17T17:34:37.964Z"
+  },
+  {
+    "user": "Teszt",
+    "message": "EZ egy jó nap volt ",
+    "createdAt": "2023-10-17T17:50:20.727Z"
+  },
+  {
+    "user": "Teszt",
+    "message": "EZ egy jó nap volt ",
+    "createdAt": "2023-10-17T17:54:41.656Z"
+  },
+  {
+    "user": "Teszt",
+    "message": "EZ egy jó nap volt ",
+    "createdAt": "2023-10-17T17:55:12.097Z"
+  },
+  {
+    "user": "Teszt",
+    "message": "EZ egy jó nap volt ",
+    "createdAt": "2023-10-17T17:59:28.283Z"
+  }
+]
