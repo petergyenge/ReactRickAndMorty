@@ -1,7 +1,6 @@
 import express from "express"
 import { z } from "zod"
 import { load, save } from "../utils/db"
-import path from "path"
 
 const router = express.Router()
 
@@ -11,7 +10,8 @@ const QuerySchema = z.object({
 
 const MessageRequestSchema = z.object({
   user: z.string(),
-  message: z.string()
+  message: z.string(),
+  test: z.string()
 })
 
 
