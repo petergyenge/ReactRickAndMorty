@@ -43,4 +43,15 @@ router.post("/", async (req, res) => {
   return res.json(newMessage)
 })
 
+router.delete("/:name", async (req, res) => {
+  const name = req.params.name;
+
+  const data = await load("messages")
+  const votes = MessageSchema.array().parse(data)
+  let filteredUsers = votes.filter((vote) => vote.name !== name);
+  await save("messages", filteredUsers)
+
+  res.sendStatus(200);
+});
+
 export { router }

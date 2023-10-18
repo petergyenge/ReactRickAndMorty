@@ -1,17 +1,12 @@
 [
   {
-    "name": "Morty Smith",
-    "imageUrl": "https://rickandmortyapi.com/api/character/2",
-    "createdAt": "2023-10-18T12:47:48.546Z"
+    "name": "Arthricia",
+    "imageUrl": "https://rickandmortyapi.com/api/character/avatar/26.jpeg",
+    "createdAt": "2023-10-18T17:43:44.100Z"
   },
   {
-    "name": "Summer Smith",
-    "imageUrl": "https://rickandmortyapi.com/api/character/3",
-    "createdAt": "2023-10-18T12:47:52.354Z"
-  },
-  {
-    "name": "Beth Smith",
-    "imageUrl": "https://rickandmortyapi.com/api/character/4",
-    "createdAt": "2023-10-18T12:47:55.618Z"
+    "name": "Armothy",
+    "imageUrl": "https://rickandmortyapi.com/api/character/avatar/25.jpeg",
+    "createdAt": "2023-10-18T17:43:44.871Z"
   }
 ]
