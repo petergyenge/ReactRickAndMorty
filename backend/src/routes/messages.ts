@@ -9,9 +9,8 @@ const QuerySchema = z.object({
 })
 
 const MessageRequestSchema = z.object({
-  user: z.string(),
-  message: z.string(),
-  test: z.string()
+  name: z.string(),
+  imageUrl: z.string()
 })
 
 
@@ -31,9 +30,6 @@ router.get("/", async (req, res) => {
 })
 
 router.post("/", async (req, res) => {
-  if (Math.random() > 0.7)
-    return res.sendStatus(503)
-
   const bodyParseResult = MessageRequestSchema.safeParse(req.body)
   if (!bodyParseResult.success)
     return res.sendStatus(400)

@@ -1,52 +1,17 @@
 [
   {
-    "user": "bela123",
-    "message": "Jo napom van",
-    "createdAt": "2023-09-15T15:12:24.671Z"
+    "name": "Morty Smith",
+    "imageUrl": "https://rickandmortyapi.com/api/character/2",
+    "createdAt": "2023-10-18T12:47:48.546Z"
   },
   {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt1010 ",
-    "createdAt": "2023-10-17T17:17:17.969Z"
+    "name": "Summer Smith",
+    "imageUrl": "https://rickandmortyapi.com/api/character/3",
+    "createdAt": "2023-10-18T12:47:52.354Z"
   },
   {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt1010 ",
-    "createdAt": "2023-10-17T17:32:14.140Z"
-  },
-  {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt1010 ",
-    "createdAt": "2023-10-17T17:34:37.964Z"
-  },
-  {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt ",
-    "createdAt": "2023-10-17T17:50:20.727Z"
-  },
-  {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt ",
-    "createdAt": "2023-10-17T17:54:41.656Z"
-  },
-  {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt ",
-    "createdAt": "2023-10-17T17:55:12.097Z"
-  },
-  {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt ",
-    "createdAt": "2023-10-17T17:59:28.283Z"
-  },
-  {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt ",
-    "createdAt": "2023-10-17T18:05:11.518Z"
-  },
-  {
-    "user": "Teszt",
-    "message": "EZ egy jó nap volt ",
-    "createdAt": "2023-10-17T18:09:39.458Z"
+    "name": "Beth Smith",
+    "imageUrl": "https://rickandmortyapi.com/api/character/4",
+    "createdAt": "2023-10-18T12:47:55.618Z"
   }
 ]

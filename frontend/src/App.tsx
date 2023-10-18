@@ -4,7 +4,6 @@ import { Character } from "./api";
 import Pagination from "./pagination/pagination";
 import Search from "./Search/search";
 import { postMessage } from "./api/post";
-
 import "./App.css";
 
 function App() {
@@ -13,6 +12,8 @@ function App() {
   const [pageNumber, setPageNumber] = useState(1);
   const [search, setSearch] = useState("");
   const [infoPages, setInfoPages] = useState(0);
+  const [isSending, setisSending] = useState(false)
+  const [changePage, setChangePage] = useState(false)
 
   const loadCharacter = async (page: number, name: string) => {
     const response = await loadCharacters(page, name);
@@ -30,9 +31,14 @@ function App() {
     return () => {};
   });
 
+
+
   return (
     <>
+
       <div className="bg-[#9DD7D7]">
+      <button className="btn"
+      onClick={()=> {!changePage}}>Fav</button>
         <div>
           <h1>{error}</h1>
           <div className="flex flex-col justify-center items-center">
@@ -71,8 +77,9 @@ function App() {
                 <p>Last Location</p>
                 <p>{character.origin.name}</p>
                 <div className="card-actions">
-                  <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full">
-                    Vote
+                  <button className={`${!isSending ? "bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" : "btn btn-success"}`}
+                  onClick={() => {postMessage(character.name, character.url); setisSending(!isSending)}}>
+                   {`${!isSending ? "Vote" : "vote is done"}`}
                   </button>
                 </div>
               </div>
